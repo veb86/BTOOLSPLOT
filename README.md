@@ -6,6 +6,8 @@
 
 **ВНИМАНИЕ! Самое главное написано в последнем пункте**
 
+[Download BTOOLSPLOT](https://github.com/veb86/BTOOLSPLOT/releases)
+
 ## КАК ЗАПУСТИТЬ:
 Разобраться в cuix – сил не хватило:pensive:, рассчитываю на помощь других :relaxed:. Поэтому, делаем следующее, вводим netload, далее выбираем нужную нам dll (BTOOLSPLOT/bin/Debug/BTOOLS_PLOT.dll)    
 **Есть две команды:**
