@@ -21,10 +21,12 @@ namespace BTOOLS_PLOT
 
 		//'глобальное объявление переменых внутри этого файла
 		//'***********************************************'
-		public static Document acDoc = Application.DocumentManager.MdiActiveDocument;
-		public static Database acCurDb = acDoc.Database;
+		//public static Document acDoc = Application.DocumentManager.MdiActiveDocument;
+		//public static Database acCurDb = acDoc.Database;
 		public static settingXML getSettingAll()
 		{
+			Document acDoc = Application.DocumentManager.MdiActiveDocument;
+			Database acCurDb = acDoc.Database;
 			settingXML setXML = new settingXML();
 			//string pathDLL = new (System.Uri(Assembly.GetExecutingAssembly().CodeBase)).AbsolutePath;
 			System.Uri uri = new Uri(Assembly.GetExecutingAssembly().CodeBase);

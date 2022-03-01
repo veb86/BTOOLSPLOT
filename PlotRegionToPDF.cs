@@ -604,7 +604,8 @@ namespace BTOOLS_PLOT
                                             ppd.SheetProgressPos = 0;
                                             Pt.PlotPageInfo ppi = new Pt.PlotPageInfo();
                                             //pe.BeginPage(ppi, pi, true, null);
-                                            pe.BeginPage(ppi, pi, false, null);
+                                            //////////////////////////////////////////////////////pe.BeginPage(ppi, pi, false, null);
+                                            pe.BeginPage(ppi, pi, true, null);
                                             //MessageBox.Show("3");
                                             pe.BeginGenerateGraphics(null);
                                             pe.EndGenerateGraphics(null);
