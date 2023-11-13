@@ -9,8 +9,8 @@
     <setSheet>
       <height>210</height>
       <weight>297</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -18,8 +18,8 @@
     <setSheet>
       <height>297</height>
       <weight>420</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -27,8 +27,8 @@
     <setSheet>
       <height>420</height>
       <weight>594</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A2</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -36,8 +36,8 @@
     <setSheet>
       <height>594</height>
       <weight>841</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A1</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -45,8 +45,8 @@
     <setSheet>
       <height>841</height>
       <weight>1189</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A0</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -54,8 +54,8 @@
     <setSheet>
       <height>297</height>
       <weight>630</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x3</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -63,8 +63,8 @@
     <setSheet>
       <height>297</height>
       <weight>841</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x4</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -72,8 +72,8 @@
     <setSheet>
       <height>297</height>
       <weight>1051</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x5</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -81,8 +81,8 @@
     <setSheet>
       <height>297</height>
       <weight>1261</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x6</nameSheet>
       <weightPlot>1261</weightPlot>
       <heightPlot>950</heightPlot>
@@ -90,8 +90,8 @@
     <setSheet>
       <height>297</height>
       <weight>1471</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x7</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -99,8 +99,8 @@
     <setSheet>
       <height>297</height>
       <weight>1682</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x8</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -108,8 +108,8 @@
     <setSheet>
       <height>297</height>
       <weight>1892</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A4x9</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -117,8 +117,8 @@
     <setSheet>
       <height>420</height>
       <weight>891</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x3</nameSheet>
       <weightPlot>891</weightPlot>
       <heightPlot>594</heightPlot>
@@ -126,8 +126,8 @@
     <setSheet>
       <height>420</height>
       <weight>1189</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x4</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -135,8 +135,8 @@
     <setSheet>
       <height>420</height>
       <weight>1486</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x5</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -144,8 +144,8 @@
     <setSheet>
       <height>420</height>
       <weight>1783</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x6</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -153,8 +153,8 @@
     <setSheet>
       <height>420</height>
       <weight>2080</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x7</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -162,8 +162,8 @@
     <setSheet>
       <height>594</height>
       <weight>1260</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A2x3</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -171,8 +171,8 @@
     <setSheet>
       <height>594</height>
       <weight>1682</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A2x4</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -180,8 +180,8 @@
     <setSheet>
       <height>594</height>
       <weight>2102</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A2x5</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -189,8 +189,8 @@
     <setSheet>
       <height>841</height>
       <weight>1783</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A1x3</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -198,8 +198,8 @@
     <setSheet>
       <height>841</height>
       <weight>2378</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A1x4</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -207,8 +207,8 @@
     <setSheet>
       <height>1189</height>
       <weight>1682</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A0x2</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>
@@ -216,8 +216,8 @@
     <setSheet>
       <height>1189</height>
       <weight>2523</weight>
-      <printPortrait>PDF24</printPortrait>
-      <printLandscape>PDF24</printLandscape>
+      <printPortrait>PDF-portrait.pc3</printPortrait>
+      <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A0x3</nameSheet>
       <weightPlot>-1</weightPlot>
       <heightPlot>-1</heightPlot>

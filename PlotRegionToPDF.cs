@@ -33,6 +33,10 @@ using Hs = Autodesk.AutoCAD.DatabaseServices.HostApplicationServices;
 using Us = Autodesk.AutoCAD.DatabaseServices.SymbolUtilityServices;
 using Br = Autodesk.AutoCAD.BoundaryRepresentation;
 using Pt = Autodesk.AutoCAD.PlottingServices;
+using System.Diagnostics;
+using Ghostscript.NET;
+using Ghostscript.NET.Processor;
+using System.IO;
 
 
 //[assembly: Rt.CommandClass(typeof(BTOOLS_PLOT.PlotRegionToPDF))]
@@ -399,7 +403,7 @@ namespace BTOOLS_PLOT
 
 
 
-        public static void PlotWindowArea(searchpage.blockSpecialSheet iSheetNum, String pcsFileName, String colorstyle, String outputFileName)
+        public static void PlotWindowArea(searchpage.blockSpecialSheet iSheetNum, String pcsFileName, String colorstyle, String outputFileName, bool isConvertToPDF)
         {            
             Db.Database previewDb = Hs.WorkingDatabase;
             Ap.Document doc = cad.DocumentManager.MdiActiveDocument;
@@ -491,6 +495,9 @@ namespace BTOOLS_PLOT
                                 //ed.WriteMessage("\n какой лист - " + BTOOLS_PLOT.AutocadTest.newSetClosestMediaName(ps, new Point2d(420, 297), true) + " сек");
 
                                 // Ищем нужный принтер для печати
+
+                                ed.WriteMessage("ВЫБРАН ПРИНТЕР = " + pcsFileName);
+
                                 var canonical_media_name_list = psv.GetCanonicalMediaNameList(ps);
                                 var width = 0.0;
                                 var height = 0.0;
@@ -640,6 +647,36 @@ namespace BTOOLS_PLOT
                                     //};
                                     //System.Windows.Forms.MessageBox.Show(Autodesk.AutoCAD.ApplicationServices.Application.MainWindow,"Hello world");
                                     //MessageBox.Show("Hi! My Friend! финиш");
+
+                                    ///****Пробуем переделать в PDF
+                                    ///
+
+                                    ed.WriteMessage("ВЫБРАНОЕ ИМЯ ФАЙЛА="+ outputFileName);
+
+                                    if (isConvertToPDF) {
+
+                                        string newNameFilePDF=Path.ChangeExtension(outputFileName,".pdf");
+                                        //var switches = new List<string>;
+                                        List<string> switches = new List<string>();
+                                        //    {
+                                                        switches.Add("-dBATCH");
+                                                        switches.Add("-dSAFER");
+                                                        switches.Add("-dNOPAUSE");
+                                                        switches.Add("-q");
+                                                        switches.Add("-sDEVICE=pdfwrite");
+                                                        switches.Add("-sOutputFile=" + newNameFilePDF);
+                                                        switches.Add("-c");
+                                                        //switches.Add(POSTSCRIPT_APPEND_WATERMARK);
+                                                        switches.Add("-f");
+                                                        switches.Add(outputFileName);
+                                        // create a new instance of the GhostscriptProcessor
+                                        using (GhostscriptProcessor processor = new GhostscriptProcessor())
+                                        {
+                                            // start processing pdf file
+                                            processor.StartProcessing(switches.ToArray(), null);
+                                        }
+                                    }
+
                                 }
                                 else
                                 {

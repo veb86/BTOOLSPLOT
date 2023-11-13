@@ -3,3 +3,11 @@ D:\DEVELOP\BTOOLS_PLOT\bin\Debug\BTOOLS_PLOT.pdb
 D:\DEVELOP\BTOOLS_PLOT\obj\Debug\BTOOLS_PLOT.csprojAssemblyReference.cache
 D:\DEVELOP\BTOOLS_PLOT\obj\Debug\BTOOLS_PLOT.dll
 D:\DEVELOP\BTOOLS_PLOT\obj\Debug\BTOOLS_PLOT.pdb
+D:\Develop\BTOOLSPLOT\obj\Debug\BTOOLS_PLOT.csproj.AssemblyReference.cache
+D:\Develop\BTOOLSPLOT\obj\Debug\BTOOLS_PLOT.csproj.CoreCompileInputs.cache
+D:\Develop\BTOOLSPLOT\obj\Debug\BTOOLS_PLOT.dll
+D:\Develop\BTOOLSPLOT\obj\Debug\BTOOLS_PLOT.pdb
+D:\Develop\BTOOLSPLOT\bin\Debug\BTOOLS_PLOT.dll
+D:\Develop\BTOOLSPLOT\bin\Debug\BTOOLS_PLOT.pdb
+D:\Develop\BTOOLSPLOT\bin\Debug\Ghostscript.NET.dll
+D:\Develop\BTOOLSPLOT\obj\Debug\BTOOLS_PLOT.csproj.CopyComplete

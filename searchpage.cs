@@ -952,15 +952,25 @@ namespace BTOOLS_PLOT
         [CommandMethod("BTOOLSPLOTALL")]
         public void BTOOLSPLOTALL()
         {
-            BTOOLSPLOT(true);
+            BTOOLSPLOT(true,false);
         }
 
         [CommandMethod("BTOOLSPLOTAREA")]
         public void BTOOLSPLOTAREA()
         {
-            BTOOLSPLOT(false);
+            BTOOLSPLOT(false,false);
         }
-            public void BTOOLSPLOT(bool allPlot)
+        [CommandMethod("BTOOLSPLOTALLPDF")]
+        public void BTOOLSPLOTALLPDF()
+        {
+            BTOOLSPLOT(true, true);
+        }
+        [CommandMethod("BTOOLSPLOTAREAPDF")]
+        public void BTOOLSPLOTAREAPDF()
+        {
+            BTOOLSPLOT(false,true);
+        }
+        public void BTOOLSPLOT(bool allPlot, bool isConverttoPDF)
         {
             // 1. Определить необходимые блоки на модели/листах
             // 2. Создать список листов и заполнить характеристик
@@ -1183,7 +1193,15 @@ namespace BTOOLS_PLOT
                     acDoc.Editor.WriteMessage(" - цветной");
                 } else { acDoc.Editor.WriteMessage(" - ЧБ"); }
 
-                BTOOLS_PLOT.PlotWindowAreaToPDF.PlotWindowArea(iBSObj, nameprinter, colorstyle, setXML.waysavetopdf + file_name + setXML.waysavetoext);
+                //проверяем конвертировать в ПДВ, Да или нет
+                //string nameEXT = "";
+                //if isConverttoPDF {
+                //   nameEXT = setXML.waysavetoext;
+
+                //}; 
+
+
+                BTOOLS_PLOT.PlotWindowAreaToPDF.PlotWindowArea(iBSObj, nameprinter, colorstyle, setXML.waysavetopdf + file_name + setXML.waysavetoext, isConverttoPDF);
 
                 AddLine(iBSObj.LT, iBSObj.BR); //рисуем линию
 
