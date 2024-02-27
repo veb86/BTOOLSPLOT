@@ -403,12 +403,13 @@ namespace BTOOLS_PLOT
 
 
 
-        public static void PlotWindowArea(searchpage.blockSpecialSheet iSheetNum, String pcsFileName, String colorstyle, String outputFileName, bool isConvertToPDF)
+        public static bool PlotWindowArea(searchpage.blockSpecialSheet iSheetNum, String pcsFileName, String colorstyle, String outputFileName, bool isConvertToPDF)
         {            
             Db.Database previewDb = Hs.WorkingDatabase;
             Ap.Document doc = cad.DocumentManager.MdiActiveDocument;
             Db.Database db = doc.Database;
             Ed.Editor ed = doc.Editor;
+            bool printOK = false;
 
             try
             {
@@ -456,7 +457,7 @@ namespace BTOOLS_PLOT
                                 //ВНИМАНИЕ. Очень важно левая нижняя точка до правая верхняя
                                 Db.Extents2d extents = new Db.Extents2d(firres[0],secres[1],secres[0],firres[1]);
                                 
-
+                                try { 
                                 psv.SetPlotConfigurationName(ps, pcsFileName, null); // Подключаем к печате имя принтера
                                 psv.RefreshLists(ps);
                                 ed.WriteMessage(" - " + pcsFileName);
@@ -635,22 +636,22 @@ namespace BTOOLS_PLOT
                                         //pe.Destroy();
                                         //MessageBox.Show("7");
                                     }
-                                    //int a = 0;
-                                    //while (Pt.PlotFactory.ProcessPlotState != Pt.ProcessPlotState.NotPlotting)
-                                    //{
-                                    //    a++;
-                                    //    Thread.Sleep(100);
-                                    //}
-                                    //if (a != 0)
-                                    //{
-                                    //    ed.WriteMessage(" завершена за " + a + " сек");
-                                    //};
-                                    //System.Windows.Forms.MessageBox.Show(Autodesk.AutoCAD.ApplicationServices.Application.MainWindow,"Hello world");
-                                    //MessageBox.Show("Hi! My Friend! финиш");
+                                        //int a = 0;
+                                        //while (Pt.PlotFactory.ProcessPlotState != Pt.ProcessPlotState.NotPlotting)
+                                        //{
+                                        //    a++;
+                                        //    Thread.Sleep(100);
+                                        //}
+                                        //if (a != 0)
+                                        //{
+                                        //    ed.WriteMessage(" завершена за " + a + " сек");
+                                        //};
+                                        //System.Windows.Forms.MessageBox.Show(Autodesk.AutoCAD.ApplicationServices.Application.MainWindow,"Hello world");
+                                        //MessageBox.Show("Hi! My Friend! финиш");
 
-                                    ///****Пробуем переделать в PDF
-                                    ///
-
+                                        ///****Пробуем переделать в PDF
+                                        ///
+                                        printOK = true;
                                     ed.WriteMessage("ВЫБРАНОЕ ИМЯ ФАЙЛА="+ outputFileName);
 
                                     if (isConvertToPDF) {
@@ -682,8 +683,24 @@ namespace BTOOLS_PLOT
                                 {
                                     ed.WriteMessage("\nAnother plot is in progress.");
                                 }
+                                }
+                                catch
+                                {
+
+                                    ed.WriteMessage("\n");
+                                    ed.WriteMessage("ОШИБКА ОШИБКА: ИМЯ принтера указаное в настройках отсутствует в принтерах установленых в автокаде. Или отсутствуют настройки размеров листов в автокаде"); 
+                                    ed.WriteMessage("\n");
+                                    ed.WriteMessage("ОШИБКА ОШИБКА: ИМЯ принтера указаное в настройках отсутствует в принтерах установленых в автокаде. Или отсутствуют настройки размеров листов в автокаде");
+                                    ed.WriteMessage("\n");
+                                }
                             }
-                        }
+
+
+
+
+
+
+        }
                         tr.Commit();
                     }
                 }
@@ -692,6 +709,7 @@ namespace BTOOLS_PLOT
             {
                 Hs.WorkingDatabase = previewDb;
             }
+            return printOK;
         }
     }
 }

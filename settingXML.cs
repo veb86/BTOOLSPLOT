@@ -25,8 +25,12 @@ namespace BTOOLS_PLOT
 		public string colorWB;
 		public string colorRGB;
 		public string specTextColor;
+        public string prefixSheet;
+        public string suffixSheet;
+        public string connectorSheet;
+        public bool swapNameAndNum;
 
-		public List<setSheet> listFS = new List<setSheet>();
+        public List<setSheet> listFS = new List<setSheet>();
 
 		//public List<Double> arrScale = new List<Double>();
 		//public List<Double> listLengthLine = new List<Double>();

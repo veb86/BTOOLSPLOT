@@ -5,6 +5,10 @@
   <colorWB>monochrome.ctb</colorWB>
   <colorRGB>acad.ctb</colorRGB>
   <specTextColor>RGB</specTextColor>
+  <prefixSheet>Лист </prefixSheet>
+  <suffixSheet />
+  <connectorSheet>. </connectorSheet>
+  <swapNameAndNum>true</swapNameAndNum>
   <listFS>
     <setSheet>
       <height>210</height>
@@ -120,8 +124,8 @@
       <printPortrait>PDF-portrait.pc3</printPortrait>
       <printLandscape>PDF-portrait.pc3</printLandscape>
       <nameSheet>A3x3</nameSheet>
-      <weightPlot>891</weightPlot>
-      <heightPlot>594</heightPlot>
+      <weightPlot>-1</weightPlot>
+      <heightPlot>-1</heightPlot>
     </setSheet>
     <setSheet>
       <height>420</height>

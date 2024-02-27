@@ -58,11 +58,16 @@ namespace BTOOLS_PLOT
 				setXML.colorWB = "monochrome.ctb";
 				setXML.colorRGB = "acad.ctb";
 				setXML.specTextColor = "RGB";
+                setXML.prefixSheet = "Лист ";
+                setXML.connectorSheet = ". ";
+                setXML.suffixSheet = "";
+				setXML.swapNameAndNum = true;
 
-				settingXML.setSheet fSheet = new settingXML.setSheet();
+
+                settingXML.setSheet fSheet = new settingXML.setSheet();
 					
-				fSheet.printPortrait = "PDF24";
-				fSheet.printLandscape = "PDF24";
+				fSheet.printPortrait = "PDF-portrait.pc3";
+				fSheet.printLandscape = "PDF-portrait.pc3";
 				fSheet.heightPlot = -1;
 				fSheet.weightPlot = -1;
 				fSheet.nameSheet = "A4";
@@ -120,8 +125,8 @@ namespace BTOOLS_PLOT
 				fSheet.nameSheet = "A3x3";
 				fSheet.height = 420;
 				fSheet.weight = 891;
-				fSheet.heightPlot = 594;
-				fSheet.weightPlot = 891;
+				fSheet.heightPlot = -1;
+				fSheet.weightPlot = -1;
 				setXML.listFS.Add(fSheet);
 				fSheet.nameSheet = "A3x4";
 				fSheet.heightPlot = -1;
